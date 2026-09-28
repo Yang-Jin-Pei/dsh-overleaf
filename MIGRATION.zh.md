@@ -36,12 +36,16 @@ imported from ...\plugins\dsh-plugin-overleaf\index.js
 
 ## 三、路线 A：脚本一键装（推荐）
 
+> 仓库叫 `dsh-overleaf`，包名和目录名是 `dsh-plugin-overleaf`，两者不一样不是笔误：
+> profile 的 `dependencies` / `dsh.profile.bundles` 认的是**包名**，克隆到哪个目录随便，
+> 因为 `link:` 用的是绝对路径。
+
 在 **DEF** 上：
 
 ```powershell
 # 0. 先确认 DEF 上 DSH 桌面版至少成功启动过一次（要有 ~\.dsh\profiles\desktop）
 # 1. 克隆到和 ABC 一样的位置（路径不硬编码，装别处也行，改 -PluginDir 即可）
-git clone git@github.com:Yang-Jin-Pei/dsh-plugin-overleaf.git "$env:USERPROFILE\.dsh\plugins\dsh-plugin-overleaf"
+git clone git@github.com:Yang-Jin-Pei/dsh-overleaf.git "$env:USERPROFILE\.dsh\plugins\dsh-plugin-overleaf"
 
 # 2. 建链接 + 写 profile + 跑冒烟测试
 pwsh -File "$env:USERPROFILE\.dsh\plugins\dsh-plugin-overleaf\install.ps1"
@@ -78,7 +82,7 @@ error: profile "desktop" is managed exclusively by the Electron application
 官方支持的入口是 **Web 侧栏 → Plugins 页**，安装 spec 允许本地路径。所以：
 
 ```powershell
-git clone git@github.com:Yang-Jin-Pei/dsh-plugin-overleaf.git "$env:USERPROFILE\.dsh\plugins\dsh-plugin-overleaf"
+git clone git@github.com:Yang-Jin-Pei/dsh-overleaf.git "$env:USERPROFILE\.dsh\plugins\dsh-plugin-overleaf"
 pwsh -File "...\install.ps1" -LinkOnly      # 只补上插件自己的 node_modules 链接
 ```
 
