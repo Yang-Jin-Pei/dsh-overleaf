@@ -1,5 +1,7 @@
 # dsh-plugin-overleaf
 
+English | [中文](README.zh.md)
+
 Overleaf access for DeepSeek Harness, with both model tools and a browser panel.
 Works with self-hosted Overleaf / Overleaf CE instances, including ones that
 authenticate only through OIDC/SSO and therefore have no password login at all.

@@ -1,5 +1,7 @@
 # 把 Overleaf 插件搬到另一台电脑
 
+[English README](README.md) | [中文 README](README.zh.md) | 本文
+
 面向场景：ABC（现在这台）→ DEF（另一台）。GitHub 上放**源码**，其余三件东西在
 DEF 上重新生成；**登录凭据不搬**。
 
