@@ -1,0 +1,10 @@
+# The @deepseek-ai/* entries here are junctions into the DSH installation, not
+# content this package owns. Never commit them, and never let git walk into them.
+node_modules/
+
+# Local noise
+*.log
+*.zip
+*.tmp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+# The source is authored with LF endings; keep it that way on Windows clones so
+# `git diff` does not report every line as changed.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.ico binary
